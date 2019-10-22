@@ -1,0 +1,7 @@
+/.idea/
+*.iml
+*.lock
+/vendor/
+.env
+.DS_Store
+.phpunit.result.cache
