@@ -25,6 +25,7 @@ brew install php@7.1
 brew install php@7.2
 brew install php@7.3
 brew link php@7.3
+pecl install xdebug
 
 echo 'Install composer'
 echo '----------------'
