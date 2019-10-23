@@ -44,7 +44,7 @@ composer self-update
 
 echo "Install git"
 echo '----------------'
-ln -s $HOME/dotfiles/stubs/.global.gitignore $HOME/.global.gitignore
+ln -s $HOME/.dotfiles/stubs/.global.gitignore $HOME/.global.gitignore
 git config --global core.autocrlf input
 git config --global core.excludesfile $HOME/.global.gitignore
 git config --global commit.gpgsign true
