@@ -24,7 +24,6 @@ brew install yarn
 
 echo "Install php"
 echo '----------------'
-brew install php@7.0
 brew install php@7.1
 brew install php@7.2
 brew install php@7.3
