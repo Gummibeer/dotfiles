@@ -7,7 +7,7 @@ touch $HOME/.hushlogin
 
 echo 'Install wget'
 echo '------------'
-brew install wget --overwrite
+brew install wget
 
 echo 'Install ffmpeg'
 echo '------------'
