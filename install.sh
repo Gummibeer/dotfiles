@@ -56,5 +56,7 @@ fi
 echo "sign commits: https://help.github.com/en/github/authenticating-to-github/associating-an-email-with-your-gpg-key"
 
 # add bash configuration
-ln -s $HOME/dotfiles/stubs/.bash_profile $HOME/.bash_profile
-ln -s $HOME/dotfiles/stubs/.bashrc $HOME/.bashrc
+ln -s $HOME/.dotfiles/stubs/.bash_profile $HOME/.bash_profile
+source $HOME/.bash_profile
+ln -s $HOME/.dotfiles/stubs/.bashrc $HOME/.bashrc
+source $HOME/.bashrc
