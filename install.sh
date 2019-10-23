@@ -9,6 +9,10 @@ echo 'Install wget'
 echo '------------'
 brew install wget
 
+echo 'Install gpg'
+echo '------------'
+brew install gnupg gnupg2
+
 echo 'Install ffmpeg'
 echo '------------'
 brew install ffmpeg
@@ -20,7 +24,6 @@ brew cask install keepassxc
 echo 'Install yarn'
 echo '------------'
 brew install yarn
-
 
 echo "Install php"
 echo '----------------'
