@@ -13,6 +13,10 @@ echo 'Install ffmpeg'
 echo '------------'
 brew install ffmpeg
 
+echo 'Install keepass'
+echo '------------'
+brew cask install keepassxc
+
 echo 'Install yarn'
 echo '------------'
 brew install yarn
