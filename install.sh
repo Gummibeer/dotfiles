@@ -41,6 +41,8 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 mv composer.phar /usr/local/bin/composer
 composer self-update
+composer global require symfony/thanks
+composer global require localheinz/composer-normalize
 
 echo "Install git"
 echo '----------------'
