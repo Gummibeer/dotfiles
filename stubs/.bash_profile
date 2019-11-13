@@ -14,4 +14,4 @@ _artisan()
 complete -F _artisan artisan
 
 alias phpunit="vendor/bin/phpunit"
-alias laravel="composer create-project laravel/laravel && rsync -vuaq laravel/ . && rm -rf laravel/ && yarn install"
+alias laravel="composer create-project laravel/laravel && rsync -uaq laravel/ . && rm -rf laravel/ && yarn install"
