@@ -15,3 +15,4 @@ complete -F _artisan artisan
 
 alias phpunit="vendor/bin/phpunit"
 alias laravel="composer create-project laravel/laravel && rsync -uaq laravel/ . && rm -rf laravel/ && yarn install"
+alias stancy="composer create-project gummibeer/stancy-template laravel && rsync -uaq laravel/ . && rm -rf laravel/ && yarn install"
