@@ -21,6 +21,10 @@ echo 'Install keepass'
 echo '------------'
 brew cask install keepassxc
 
+echo 'Install starship'
+echo '------------'
+brew install starship
+
 echo 'Install yarn'
 echo '------------'
 brew install yarn
