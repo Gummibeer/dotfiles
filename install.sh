@@ -5,6 +5,10 @@ sudo -v
 # Hide "last login" line when starting a new terminal session
 touch $HOME/.hushlogin
 
+echo 'Install coreutils/readlink'
+echo '------------'
+brew install coreutils
+
 echo 'Install wget'
 echo '------------'
 brew install wget
