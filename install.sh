@@ -33,6 +33,14 @@ echo 'Install yarn'
 echo '------------'
 brew install yarn
 
+echo 'Install Fira Code'
+echo '------------'
+curl -o '~/Library/Fonts/FiraCode-Bold.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Bold.ttf'
+curl -o '~/Library/Fonts/FiraCode-Light.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Light.ttf'
+curl -o '~/Library/Fonts/FiraCode-Medium.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Medium.ttf'
+curl -o '~/Library/Fonts/FiraCode-Regular.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Regular.ttf'
+curl -o '~/Library/Fonts/FiraCode-Retina.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Retina.ttf'
+
 echo "Install php"
 echo '----------------'
 brew install php@7.1
@@ -50,7 +58,7 @@ php -r "unlink('composer-setup.php');"
 mv composer.phar /usr/local/bin/composer
 composer self-update
 composer global require symfony/thanks
-composer global require localheinz/composer-normalize
+composer global require ergebnis/composer-normalize
 
 echo "Install git"
 echo '----------------'
