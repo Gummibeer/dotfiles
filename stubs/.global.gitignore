@@ -2,6 +2,7 @@
 *.iml
 *.lock
 /vendor/
+/node_modules/
 .env
 .DS_Store
 .phpunit.result.cache
