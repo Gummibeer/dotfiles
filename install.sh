@@ -2,79 +2,68 @@
 
 sudo -v
 
+install_headline () {
+	echo "$(tput setaf 7)$(tput setab 6)Install $1$(tput sgr 0)"
+	echo "$(tput setaf 7)$(tput setab 6)------------$(tput sgr 0)"
+}
+
+brew_install () {
+	install_headline "$1"
+	(brew list "$1" &> /dev/null && echo "already installed") || brew install "$1"
+}
+
 # Hide "last login" line when starting a new terminal session
 touch $HOME/.hushlogin
 
-echo 'Install coreutils/readlink'
-echo '------------'
-brew install coreutils
+brew_install "coreutils"
+brew_install "wget"
+brew_install "gnupg"
+brew_install "gnupg2"
+brew_install "ffmpeg"
+brew_install "imagemagick"
+brew_install "starship"
+brew_install "yarn"
 
-echo 'Install wget'
-echo '------------'
-brew install wget
-
-echo 'Install gpg'
-echo '------------'
-brew install gnupg gnupg2
-
-echo 'Install ffmpeg'
-echo '------------'
-brew install ffmpeg
-
-echo 'Install keepass'
-echo '------------'
+install_headline "keepass"
 brew cask install keepassxc
 
-echo 'Install starship'
-echo '------------'
-brew install starship
+install_headline "Fira Code"
+[ ! -f ~/Library/Fonts/FiraCode-Bold.ttf ] && curl -o '~/Library/Fonts/FiraCode-Bold.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Bold.ttf'
+[ ! -f ~/Library/Fonts/FiraCode-Light.ttf ] && curl -o '~/Library/Fonts/FiraCode-Light.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Light.ttf'
+[ ! -f ~/Library/Fonts/FiraCode-Medium.ttf ] && curl -o '~/Library/Fonts/FiraCode-Medium.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Medium.ttf'
+[ ! -f ~/Library/Fonts/FiraCode-Regular.ttf ] && curl -o '~/Library/Fonts/FiraCode-Regular.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Regular.ttf'
+[ ! -f ~/Library/Fonts/FiraCode-Retina.ttf ] && curl -o '~/Library/Fonts/FiraCode-Retina.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Retina.ttf'
 
-echo 'Install yarn'
-echo '------------'
-brew install yarn
-
-echo 'Install Fira Code'
-echo '------------'
-curl -o '~/Library/Fonts/FiraCode-Bold.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Bold.ttf'
-curl -o '~/Library/Fonts/FiraCode-Light.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Light.ttf'
-curl -o '~/Library/Fonts/FiraCode-Medium.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Medium.ttf'
-curl -o '~/Library/Fonts/FiraCode-Regular.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Regular.ttf'
-curl -o '~/Library/Fonts/FiraCode-Retina.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Retina.ttf'
-
-echo "Install php"
-echo '----------------'
-brew install php@7.1
-brew install php@7.2
-brew install php@7.3
-brew link php@7.3
+install_headline "php"
+brew install php@7.4
+brew link php@7.4
+brew install pkg-config
 pecl install xdebug
+pecl install imagick
 
-echo 'Install composer'
-echo '----------------'
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('sha384', 'composer-setup.php') === 'a5c698ffe4b8e849a443b120cd5ba38043260d5c4023dbf93e1558871f1f07f58274fc6f4c93bcfd858c6bd0775cd8d1') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
-mv composer.phar /usr/local/bin/composer
+install_headline "composer"
+if [ ! -f /usr/local/bin/composer ]; then
+	php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+	php composer-setup.php
+	php -r "unlink('composer-setup.php');"
+	mv composer.phar /usr/local/bin/composer
+fi
 composer self-update
 composer global require symfony/thanks
 composer global require ergebnis/composer-normalize
 
-echo "Install git"
-echo '----------------'
-ln -s $HOME/.dotfiles/stubs/.global.gitignore $HOME/.global.gitignore
+install_headline "git"
+[ ! -f ~/.global.gitignore ] && ln -s ~/.dotfiles/stubs/.global.gitignore ~/.global.gitignore
 git config --global core.autocrlf input
-git config --global core.excludesfile $HOME/.global.gitignore
+git config --global core.excludesfile ~/.global.gitignore
 git config --global commit.gpgsign true
 git config --global user.name "Tom Witkowski"
 git config --global user.email "dev.gummibeer@gmail.com"
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    git config --global credential.helper osxkeychain
-fi
+git config --global credential.helper osxkeychain
 echo "sign commits: https://help.github.com/en/github/authenticating-to-github/associating-an-email-with-your-gpg-key"
 
 # add bash configuration
-ln -s $HOME/.dotfiles/stubs/.bash_profile $HOME/.bash_profile
-source $HOME/.bash_profile
-ln -s $HOME/.dotfiles/stubs/.bashrc $HOME/.bashrc
-source $HOME/.bashrc
+[ ! -f ~/.bash_profile ] && ln -s ~/.dotfiles/stubs/.bash_profile ~/.bash_profile
+source ~/.bash_profile
+[ ! -f ~/.bashrc ] && ln -s ~/.dotfiles/stubs/.bashrc ~/.bashrc
+source ~/.bashrc
