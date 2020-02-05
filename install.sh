@@ -33,6 +33,7 @@ install_headline "Fira Code"
 [ ! -f ~/Library/Fonts/FiraCode-Medium.ttf ] && curl -o '~/Library/Fonts/FiraCode-Medium.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Medium.ttf'
 [ ! -f ~/Library/Fonts/FiraCode-Regular.ttf ] && curl -o '~/Library/Fonts/FiraCode-Regular.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Regular.ttf'
 [ ! -f ~/Library/Fonts/FiraCode-Retina.ttf ] && curl -o '~/Library/Fonts/FiraCode-Retina.ttf' 'https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Retina.ttf'
+# https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 
 install_headline "php"
 brew install php@7.4

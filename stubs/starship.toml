@@ -1,0 +1,56 @@
+[aws]
+symbol = " "
+
+[battery]
+full_symbol = " "
+charging_symbol = " "
+discharging_symbol = " "
+
+[[battery.display]]
+threshold = 30
+style = "bold red"
+
+[[battery.display]]
+threshold = 50
+style = "bold yellow"
+
+[conda]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[character]
+symbol = "❯"
+error_symbol = "✖"
+use_symbol_for_status = true

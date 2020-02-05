@@ -6,6 +6,7 @@ export GREP_OPTIONS="--color=auto"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export BASH_SILENCE_DEPRECATION_WARNING=1
+export STARSHIP_CONFIG="$HOME/.dotfiles/stubs/starship.toml"
 
 alias artisan='php artisan'
 _artisan()
