@@ -16,6 +16,7 @@ brew_install () {
 touch $HOME/.hushlogin
 
 brew_install "coreutils"
+brew_install "nmap"
 brew_install "wget"
 brew_install "gnupg"
 brew_install "gnupg2"
