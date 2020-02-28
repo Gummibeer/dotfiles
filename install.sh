@@ -54,6 +54,13 @@ composer self-update
 composer global require symfony/thanks
 composer global require ergebnis/composer-normalize
 
+install_headline "deployer"
+if [ ! -f /usr/local/bin/composer ]; then
+	curl -LO https://deployer.org/deployer.phar
+	mv deployer.phar /usr/local/bin/dep
+	chmod +x /usr/local/bin/dep
+fi
+
 install_headline "git"
 [ ! -f ~/.global.gitignore ] && ln -s ~/.dotfiles/stubs/.global.gitignore ~/.global.gitignore
 git config --global core.autocrlf input
