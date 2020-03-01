@@ -24,6 +24,7 @@ brew_install "ffmpeg"
 brew_install "imagemagick"
 brew_install "starship"
 brew_install "yarn"
+brew_install "github/gh/gh"
 
 install_headline "keepass"
 brew cask install keepassxc
