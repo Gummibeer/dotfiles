@@ -54,6 +54,7 @@ fi
 composer self-update
 composer global require symfony/thanks
 composer global require ergebnis/composer-normalize
+composer global require bamarni/composer-bin-plugin
 
 install_headline "deployer"
 if [ ! -f /usr/local/bin/composer ]; then
