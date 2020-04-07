@@ -62,6 +62,7 @@ cask 'teamviewer'
 cask 'adoptopenjdk'
 cask 'tinymediamanager'
 cask 'tinkerwell'
+cask 'loopback'
 
 ##
 # Quicklook
