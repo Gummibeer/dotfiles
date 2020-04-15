@@ -67,6 +67,7 @@ cask 'sensiblesidebuttons'
 cask 'steam'
 cask 'battle-net'
 cask 'guild-wars2'
+cask 'league-of-legends'
 
 ##
 # Quicklook
