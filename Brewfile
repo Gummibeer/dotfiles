@@ -63,6 +63,7 @@ cask 'adoptopenjdk'
 cask 'tinymediamanager'
 cask 'tinkerwell'
 cask 'loopback'
+cask 'sensiblesidebuttons'
 
 ##
 # Quicklook
