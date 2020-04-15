@@ -54,15 +54,19 @@ cask 'sequel-pro'
 cask 'insomnia'
 cask 'imageoptim'
 cask 'adobe-creative-cloud'
-cask 'steam'
-cask 'kap'
 cask 'handbrake'
 cask 'teamviewer'
 cask 'adoptopenjdk'
 cask 'tinymediamanager'
 cask 'tinkerwell'
 cask 'sensiblesidebuttons'
+
+##
+# Games
+##
+cask 'steam'
 cask 'battle-net'
+cask 'guild-wars2'
 
 ##
 # Quicklook
