@@ -2,7 +2,6 @@
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/bundle'
-tap 'owenvoke/casks'
 
 ##
 # Binaries
