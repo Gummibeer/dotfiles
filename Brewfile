@@ -62,6 +62,7 @@ cask 'adoptopenjdk'
 cask 'tinymediamanager'
 cask 'tinkerwell'
 cask 'sensiblesidebuttons'
+cask 'battle-net'
 
 ##
 # Quicklook
