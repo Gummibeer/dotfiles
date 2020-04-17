@@ -18,9 +18,8 @@ _artisan()
 }
 complete -F _artisan artisan
 
-alias phpunit="vendor/bin/phpunit"
+alias phpunit="php -d memory_limit=-1 vendor/bin/phpunit"
 alias laravel="composer create-project laravel/laravel && rsync -uaq laravel/ . && rm -rf laravel/ && yarn install"
 alias stancy="composer create-project gummibeer/stancy-template laravel && rsync -uaq laravel/ . && rm -rf laravel/ && yarn install"
 alias sublime="open -a /Applications/Sublime\ Text.app"
 alias grep="grep --color=auto"
-
