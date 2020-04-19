@@ -37,6 +37,7 @@ cask 'sublime-text'
 cask 'sequel-pro'
 cask 'insomnia'
 cask 'tinkerwell'
+cask 'glyphfinder'
 
 ##
 # Apps
