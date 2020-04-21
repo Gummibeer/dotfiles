@@ -38,6 +38,7 @@ cask 'sequel-pro'
 cask 'insomnia'
 cask 'tinkerwell'
 cask 'glyphfinder'
+cask 'dbngin'
 
 ##
 # Apps
