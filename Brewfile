@@ -20,6 +20,7 @@ brew 'pkg-config'
 brew 'ffmpeg'
 brew 'imagemagick'
 brew 'htop'
+brew 'libdvdcss'
 
 ##
 # Development
