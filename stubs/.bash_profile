@@ -7,6 +7,7 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export STARSHIP_CONFIG="$HOME/.dotfiles/stubs/starship.toml"
+export COMPOSER_MEMORY_LIMIT=-1
 
 alias artisan='php artisan'
 _artisan()
