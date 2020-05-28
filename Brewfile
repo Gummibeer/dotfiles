@@ -63,6 +63,7 @@ cask 'teamviewer'
 cask 'adoptopenjdk'
 cask 'tinymediamanager'
 cask 'sensiblesidebuttons'
+cask 'alfred'
 
 ##
 # Games
@@ -72,17 +73,6 @@ cask 'battle-net'
 cask 'guild-wars2'
 cask 'league-of-legends'
 cask 'twitch'
-
-##
-# Quicklook
-##
-cask 'qlcolorcode'
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'quicklook-csv'
-cask 'qlstephen'
-cask 'qlvideo'
-cask 'qlimagesize'
 
 ##
 # Mac App Store
@@ -106,3 +96,4 @@ mas 'Unarchiver', id: 425424353
 mas 'Weather Statusbar', id: 1448031908
 mas 'Phiewer', id: 1226444549
 mas 'ColorSlurp', id: 1287239339
+mas 'AudioBookBinder', id: 413969927
