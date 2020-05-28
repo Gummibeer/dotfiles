@@ -64,6 +64,7 @@ cask 'adoptopenjdk'
 cask 'tinymediamanager'
 cask 'sensiblesidebuttons'
 cask 'alfred'
+cask 'fontbase'
 
 ##
 # Games
