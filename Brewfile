@@ -38,7 +38,6 @@ cask 'sublime-text'
 cask 'sequel-pro'
 cask 'insomnia'
 cask 'tinkerwell'
-cask 'glyphfinder'
 cask 'dbngin'
 
 ##
@@ -65,6 +64,8 @@ cask 'tinymediamanager'
 cask 'sensiblesidebuttons'
 cask 'alfred'
 cask 'fontbase'
+cask 'glyphfinder'
+cask 'rocket'
 
 ##
 # Games
