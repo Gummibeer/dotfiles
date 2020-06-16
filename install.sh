@@ -5,6 +5,10 @@ sudo -v
 # Hide "last login" line when starting a new terminal session
 touch $HOME/.hushlogin
 
+# Change default screenshot directory
+mkdir -p $HOME/Pictures/Screenshot
+defaults write com.apple.screencapture location $HOME/Pictures/Screenshot
+
 # install brew apps
 brew bundle
 
