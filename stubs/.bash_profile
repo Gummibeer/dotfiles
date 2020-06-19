@@ -26,6 +26,7 @@ alias laravel="composer create-project laravel/laravel && rsync -uaq laravel/ . 
 alias stancy="composer create-project gummibeer/stancy-template laravel && rsync -uaq laravel/ . && rm -rf laravel/ && yarn install"
 alias sublime="open -a /Applications/Sublime\ Text.app"
 alias grep="grep --color=auto"
+alias kd="killall Docker"
 
 docker-compose() 
 {
