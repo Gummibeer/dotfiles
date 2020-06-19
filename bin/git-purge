@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+set -e
+
+git fetch --all
+git fetch --prune
+git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D

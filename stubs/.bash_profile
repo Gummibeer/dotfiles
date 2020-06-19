@@ -3,6 +3,7 @@ eval "$(starship init bash)"
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="$HOME/.dotfiles/bin:$PATH"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 export BASH_SILENCE_DEPRECATION_WARNING=1
