@@ -26,7 +26,8 @@ composer global require bamarni/composer-bin-plugin
 [ ! -f ~/.global.gitignore ] && ln -s ~/.dotfiles/stubs/.global.gitignore ~/.global.gitignore
 git config --global core.autocrlf input
 git config --global core.excludesfile ~/.global.gitignore
-git config --global pull.ff only
+git config --global pull.rebase false 
+git config --global pull.ff false
 git config --global commit.gpgsign true
 git config --global user.name "Tom Witkowski"
 git config --global user.email "dev.gummibeer@gmail.com"
