@@ -30,6 +30,7 @@ git config --global core.excludesfile ~/.global.gitignore
 git config --global pull.rebase false
 git config --global pull.ff only
 git config --global push.default current
+git config --global branch.autosetupmerge
 git config --global commit.gpgsign true
 git config --global user.name "Tom Witkowski"
 git config --global user.email "dev.gummibeer@gmail.com"
