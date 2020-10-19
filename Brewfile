@@ -22,6 +22,7 @@ brew 'ffmpeg'
 brew 'imagemagick'
 brew 'htop'
 brew 'libdvdcss'
+brew 'tree'
 
 ##
 # Development
