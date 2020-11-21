@@ -6,8 +6,8 @@ sudo -v
 touch $HOME/.hushlogin
 
 # Change default screenshot directory
-mkdir -p $HOME/Pictures/Screenshot
-defaults write com.apple.screencapture location $HOME/Pictures/Screenshot
+mkdir -p $HOME/Pictures/Screenshots
+defaults write com.apple.screencapture location $HOME/Pictures/Screenshots
 
 # install brew apps
 brew bundle
