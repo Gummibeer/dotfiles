@@ -2,12 +2,13 @@ eval "$(starship init bash)"
 
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-export PATH="$HOME/.dotfiles/bin:$PATH"
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+export PATH="${HOME}/.composer/vendor/bin:$PATH"
+export PATH="${HOME}/.dotfiles/bin:$PATH"
+export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
+export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
 export BASH_SILENCE_DEPRECATION_WARNING=1
-export STARSHIP_CONFIG="$HOME/.dotfiles/stubs/starship.toml"
+export STARSHIP_CONFIG="${HOME}/.dotfiles/stubs/starship.toml"
 export COMPOSER_MEMORY_LIMIT=-1
 
 alias artisan='php artisan'
@@ -26,7 +27,6 @@ alias laravel="composer create-project laravel/laravel && rsync -uaq laravel/ . 
 alias stancy="composer create-project gummibeer/stancy-template laravel && rsync -uaq laravel/ . && rm -rf laravel/ && yarn install"
 alias sublime="open -a /Applications/Sublime\ Text.app"
 alias grep="grep --color=auto"
-alias kd="killall Docker"
 
 docker-compose() 
 {
