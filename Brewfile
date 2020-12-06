@@ -57,7 +57,7 @@ cask 'vlc'
 cask 'tor-browser'
 cask 'spotmenu'
 cask 'rectangle'
-cask 'keepassxc'
+cask '1password'
 cask 'imageoptim'
 cask 'adobe-creative-cloud'
 cask 'handbrake'
@@ -77,7 +77,6 @@ cask 'steam'
 cask 'battle-net'
 cask 'guild-wars2'
 cask 'league-of-legends'
-cask 'twitch'
 
 ##
 # Mac App Store
@@ -98,7 +97,6 @@ mas 'iStat Mini', id: 927292435
 mas 'MS Word', id: 462054704
 mas 'MS Excel', id: 462058435
 mas 'Unarchiver', id: 425424353
-mas 'Weather Statusbar', id: 1448031908
-mas 'Phiewer', id: 1226444549
 mas 'ColorSlurp', id: 1287239339
 mas 'AudioBookBinder', id: 413969927
+mas 'Affinity Photo', id: 824183456
