@@ -2,6 +2,8 @@
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/bundle'
+tap 'owenvoke/casks', 'https://github.com/owenvoke/homebrew-casks.git'
+tap 'fwartner/mac-cleanup', 'https://github.com/fwartner/mac-cleanup.git'
 
 ##
 # Binaries
@@ -24,12 +26,14 @@ brew 'imagemagick'
 brew 'htop'
 brew 'libdvdcss'
 brew 'tree'
+brew 'mac-cleanup'
 
 ##
 # Development
 ##
 brew 'git'
-brew 'php@7.4'
+brew 'php@7.4', link: true
+brew 'php@8.0', link: false
 brew 'composer'
 brew 'deployer'
 brew 'node@12'
@@ -42,6 +46,7 @@ cask 'sequel-pro'
 cask 'insomnia'
 cask 'tinkerwell'
 cask 'dbngin'
+cask 'owenvoke/casks/helo'
 
 ##
 # Apps
@@ -57,7 +62,6 @@ cask 'vlc'
 cask 'tor-browser'
 cask 'spotmenu'
 cask 'rectangle'
-cask '1password'
 cask 'imageoptim'
 cask 'adobe-creative-cloud'
 cask 'handbrake'
@@ -99,4 +103,4 @@ mas 'MS Excel', id: 462058435
 mas 'Unarchiver', id: 425424353
 mas 'ColorSlurp', id: 1287239339
 mas 'AudioBookBinder', id: 413969927
-mas 'Affinity Photo', id: 824183456
+mas '1Password', id: 443987910
