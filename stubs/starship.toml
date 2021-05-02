@@ -7,9 +7,6 @@ style = "bold red"
 threshold = 50
 style = "bold yellow"
 
-[character]
-use_symbol_for_status = true
-
 [php]
 symbol = "🐘 "
 style = "bold blue"
