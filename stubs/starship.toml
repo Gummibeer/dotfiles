@@ -1,21 +1,32 @@
-
-[[battery.display]]
-threshold = 30
-style = "bold red"
+add_newline = true
 
 [[battery.display]]
 threshold = 50
 style = "bold yellow"
 
+[[battery.display]]
+threshold = 30
+style = "bold red"
+
 [php]
-symbol = "🐘 "
+symbol = ""
 style = "bold blue"
 
-
 [nodejs]
-symbol = "🤖 "
+symbol = ""
 style = "bold green"
 
 [git_branch]
-symbol = "🔸 "
+symbol = ""
 style = "bold yellow"
+
+[git_commit]
+commit_hash_length = 6
+style = "grey"
+format = "[#$hash]($style) "
+
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
